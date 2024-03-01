@@ -9,6 +9,13 @@ current_language = "spanish"
 
 # ------------------------ USER ACTIONS HANDLING ------------------------ #
 
+def get_next_word():
+    while True:
+        next_word = random.choice(list(data))
+        repeats_number = data[next_word][1]
+        if repeats_number > 0:
+            return next_word, repeats_number
+
 def wrong_clicked():
     if current_language != "spanish":
         show_other_side()
@@ -19,9 +26,8 @@ def wrong_clicked():
         json.dump(data, file, indent=1)
 
     # Generating new word
-    next_word = random.choice(list(data))
+    next_word, repeats_number = get_next_word()
     canvas.itemconfig(card_word, text=next_word)
-    repeats_number = data[next_word][1]
     repeats_label.config(text=f"upcoming repeats of that word: {repeats_number}")
 
 
@@ -35,9 +41,8 @@ def right_clicked():
         json.dump(data, file, indent=1)
 
     # Generating new word
-    next_word = random.choice(list(data))
+    next_word, repeats_number = get_next_word()
     canvas.itemconfig(card_word, text=next_word)
-    repeats_number = data[next_word][1]
     repeats_label.config(text=f"upcoming repeats of that word: {repeats_number}")
 
 
