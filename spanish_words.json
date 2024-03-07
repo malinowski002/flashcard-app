@@ -1,50 +1,54 @@
 {
  "el amor": [
   "love",
-  0
+  8
  ],
  "la felicidad": [
   "happiness",
-  0
+  7
  ],
  "la libertad": [
   "freedom",
-  0
+  8
  ],
  "el sol": [
   "sun",
-  0
+  8
  ],
  "la luna": [
   "moon",
-  0
+  8
  ],
  "la estrella": [
   "star",
-  0
+  9
  ],
  "el mar": [
   "sea",
-  0
+  8
  ],
  "la monta\u00f1a": [
   "mountain",
-  0
+  8
  ],
  "el r\u00edo": [
   "river",
-  0
+  10
  ],
  "el bosque": [
   "forest",
-  0
+  7
  ],
  "el hombre": [
   "man",
-  0
+  8
  ],
  "la mujer": [
   "woman",
-  0
+  8
+ ],
+ "el perro": [
+  "dog",
+  5
  ]
 }
